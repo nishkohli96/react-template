@@ -1,0 +1,32 @@
+import { Link } from 'react-router';
+import Box from '@mui/material/Box';
+import MuiAppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { ThemeChangeButton } from 'components';
+
+const AppBar = () => {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <MuiAppBar position="static">
+        <Toolbar>
+          <Link to="/">
+            <img src="/favicon.ico" alt="Logo" width={40} height={40} />
+          </Link>
+          <Box sx={{ flexGrow: 1 }}>
+            <Link to="/">
+              <Typography variant="h6" component="div">
+                React App
+              </Typography>
+            </Link>
+          </Box>
+          <Typography variant="h6" component="div">
+            <ThemeChangeButton />
+          </Typography>
+        </Toolbar>
+      </MuiAppBar>
+    </Box>
+  );
+};
+
+export default AppBar;

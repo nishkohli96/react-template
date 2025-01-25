@@ -1,0 +1,8 @@
+services:
+  react-client:
+    image: dockerUserName/react-v19-template
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '3000:80'
