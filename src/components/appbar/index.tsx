@@ -15,7 +15,7 @@ const AppBar = () => {
           </Link>
           <Box sx={{ flexGrow: 1 }}>
             <Link to="/">
-              <Typography variant="h6" component="div">
+              <Typography variant="h6" component="div" color="primary">
                 React App
               </Typography>
             </Link>
