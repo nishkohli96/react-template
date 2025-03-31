@@ -1,11 +1,11 @@
 import Typography from '@mui/material/Typography';
 
-const HomePage = () => {
+const Page404 = () => {
   return (
     <Typography variant="h1" component="h1" gutterBottom>
-      Welcome to the Home Page
+      404 - Not Found
     </Typography>
   );
 };
 
-export default HomePage;
+export default Page404;

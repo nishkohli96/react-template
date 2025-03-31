@@ -1,4 +1,4 @@
-import { PaletteMode } from '@mui/material/styles';
+import { type PaletteMode } from '@mui/material/styles';
 import { LightThemePalette, DarkThemePalette } from './palette';
 
 export const getTheme = (mode: PaletteMode) => ({
